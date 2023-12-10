@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="idn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Bioskop_css.css" />
+    <title>Bioskop</title>
+  </head>
+  <body onload="init()">
+    <h1>Pesan Tiket Bioskop</h1>
+    <br />
+    <div id="kenal">
+      <p>Masukkan nama Anda :</p>
+      <input
+        type="text"
+        id="namaInput"
+        placeholder="Masukkan namamu"
+        required
+      />
+    </div>
+    <br />
+    <div class="layar">Layar</div>
+    <br />
+    <table id="denah">
+      <tr class="kursi">
+        <td>A</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="A1" value="A1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="A2" value="A2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="A3" value="A3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="A4" value="A4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="A5" value="A5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="A6" value="A6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>B</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="B1" value="B1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="B2" value="B2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="B3" value="B3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="B4" value="B4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="B5" value="B5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="B6" value="B6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>C</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="C1" value="C1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="C2" value="C2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="C3" value="C3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="C4" value="C4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="C5" value="C5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="C6" value="C6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>D</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="D1" value="D1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="D2" value="D2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="D3" value="D3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="D4" value="D4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="D5" value="D5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="D6" value="D6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>E</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="E1" value="E1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="E2" value="E2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="E3" value="E3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="E4" value="E4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="E5" value="E5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="E6" value="E6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>F</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="F1" value="F1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="F2" value="F2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="F3" value="F3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="F4" value="F4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="F5" value="F5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="F6" value="F6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>G</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="G1" value="G1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="G2" value="G2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="G3" value="G3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="G4" value="G4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="G5" value="G5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="G6" value="G6">
+          6
+        </td>
+      </tr>
+      <tr class="kursi">
+        <td>H</td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="H1" value="H1">
+          1
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="H2" value="H2">
+          2
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="H3" value="H3">
+          3
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="H4" value="H4">
+          4
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="H5" value="H5">
+          5
+        </td>
+        <td class="abu2" onclick="gantiWarnaHijau(this)" name="H6" value="H6">
+          6
+        </td>
+      </tr>
+    </table>
+    <br />
+    <div class="ket">
+      <div class="tersedia">Tersedia</div>
+      <div class="dipilih">Dipilih</div>
+      <div class="dipesan">Dipesan</div>
+    </div>
+    <br />
+    <p id="tutup">Anda belum memilih seat. Silahkan pilih seat yang kosong</p>
+    <p id="buka" class="sembunyi">
+      Anda telah memilih <span id="jmlhSeat">0</span> seat, yaitu
+      <span id="namaSeat"></span>
+    </p>
+    <p>Total harga = Rp. <span id="harga">0</span></p>
+    <br />
+    <!------------->
+    <button id="button">Submit</button>
+    <!------------->
+    <br />
+    <div class="container">
+      <table id="daftar">
+        <h2>Record Pemilihan</h2>
+        <tr>
+          <th>Nama</th>
+          <th>Kursi Duduk</th>
+          <th>Harga</th>
+        </tr>
+      </table>
+    </div>
+    <div class="diri">
+      <pre>
+        Nama    : Muhammad Hafizh Dzaki
+        NIM        : A11.2021.13370
+        Kelas    : A11.4107
+      </pre>
+      <details>
+        <summary>Perhatian ! Klik Aku</summary>
+        <p class="sumari">
+          <br />
+          Website sederhana ini hanya untuk penilaian UAS. Tidak ada Database
+          yang akan menyimpan submit user. Namun, hasil submit akan disimpan di
+          'local storage'. Sehingga, ketika webpage di-refresh, data tetap akan
+          tersimpan. Data yang tersimpan di 'local storage' tersebut akan
+          ditampilkan pada tabel Record.
+          <br />
+          <br />
+          Untuk menghapus data di 'local storage' dapat dilakukan secara manual
+          dengan mengakses menu 'inspect element' dan mencari 'local storage',
+          lalu 'delete'.
+        </p>
+      </details>
+    </div>
+    <div class="logo">
+      <a href="https://www.dinus.ac.id" target="_blank">
+        <img
+          src="http://mahasiswa.dinus.ac.id/images/logo/logo-udinus2.png"
+          alt="Logo Udinus"
+          height="100px"
+          width="auto"
+        />
+      </a>
+    </div>
+    <script src="Bioskop_js.js"></script>
+  </body>
+</html>
